@@ -1,0 +1,23 @@
+# Mrs. Doubtfire carries real family data. Keep the private layer out of git
+# unless this repo is private AND you have decided that is acceptable.
+#
+# Default posture: templates are versioned, filled-in personal data is not.
+# If your repo is private and you WANT the real data versioned, comment out
+# the block below and delete data/*.local.md from your working copy.
+
+data/*.local.md
+data/**/*.local.md
+
+# Scratch and generated output
+out/
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Never commit these
+*.pem
+*.key
+.env
+.env.*
+credentials.json
+token.json
