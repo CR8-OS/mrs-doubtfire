@@ -162,6 +162,16 @@ systems, and for task managers not yet supported.
 
 ---
 
+## Credit
+
+The idea is **Sam Dolgin's** — friend, neighbor, and fellow dad, who worked out
+that the hard part of parenting logistics is not doing the thing, it is knowing
+about the thing early enough for doing it to be cheap.
+
+Everything here is an implementation of that observation. Thanks, Sam.
+
+---
+
 ## A note on the name
 
 Named after the film, affectionately. No affiliation with anyone who owns

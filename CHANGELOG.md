@@ -80,3 +80,5 @@ keyword scan.
 
 Initial build. Router skill, five domain sub-skills, weekly brief, lead-time and
 task-chain references, data templates.
+
+Original idea by Sam Dolgin.
