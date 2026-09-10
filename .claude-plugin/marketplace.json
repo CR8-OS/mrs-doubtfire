@@ -4,7 +4,7 @@
     "name": "Christophe Jammet",
     "url": "https://github.com/CR8-OS"
   },
-  "description": "Plugins for running a household. Currently one: Mrs. Doubtfire.",
+  "description": "Plugins for running a household. Mrs. Doubtfire is the public one; cj-gmail-mcp is private and personal to the author.",
   "plugins": [
     {
       "name": "mrs-doubtfire",
@@ -12,6 +12,16 @@
       "description": "Family operations quarterback. Tracks school deadlines, medical cadence, camp and afterschool registration windows, travel booking windows, parties and gifts, and seasonal household work. Works backwards from deadlines so actions land while they are still cheap.",
       "category": "productivity",
       "tags": ["family", "parenting", "school", "household", "calendar"]
+    },
+    {
+      "name": "cj-gmail-mcp",
+      "source": {
+        "source": "github",
+        "repo": "CR8-OS/cj-gmail-mcp"
+      },
+      "description": "PRIVATE, personal. An MCP server for a second Gmail account, so family mail is reachable while the built-in connector stays bound to work. Requires your own Google OAuth client and access to the repo, so it will not install for anyone else. Listed here only so the author can reach it from another machine.",
+      "category": "productivity",
+      "tags": ["gmail", "email", "personal", "private"]
     }
   ]
 }
