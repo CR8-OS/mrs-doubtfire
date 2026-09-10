@@ -64,6 +64,25 @@ addresses, phone numbers, medical detail beyond the fact of an appointment, or
 anything financial beyond a price already discussed. "Dentist, 3pm" is right.
 "Dentist, 3pm, re: the cavity on the lower left" is not.
 
+**Mental-health appointments get less than that.** Therapy, counselling,
+psychiatry, and substance-related appointments appear as a bare
+**"Appointment"** with the time. No practice name, no provider, no clinician,
+nothing that identifies the kind of care, and no indication of which family
+member it belongs to.
+
+This is not squeamishness. The page is a URL. It gets texted to a partner,
+left open on a laptop, glanced at over a shoulder, and it outlives the week it
+describes. A dentist appointment surviving all that is fine. A standing
+Thursday therapy slot is a disclosure the person in it did not agree to make,
+and the calendar is not the place they should have to make it.
+
+The private chat brief is different, and can name what it needs to. **The
+distinction is the page's shareability, not the information's importance.**
+
+If a household marks specific senders as sensitive in their mail config, honor
+that first. Where nothing is marked, apply the rule above by inference from the
+sender or the appointment type, and err toward saying less.
+
 ## Building it
 
 Write the HTML to a file, then publish with the Artifact tool.
