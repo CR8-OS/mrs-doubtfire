@@ -37,9 +37,36 @@ shoe size, because you will act on it.
 
 ---
 
+## Install
+
+This repo is its own marketplace, so you add it once and install from it.
+
+**In Claude Code:**
+
+```
+/plugin marketplace add CR8-OS/mrs-doubtfire
+/plugin install mrs-doubtfire@cr8os-family
+```
+
+**In the Claude desktop app**, once the marketplace above is added: click the
+**+** next to the prompt box, choose **Plugins → Add plugin**, and pick
+Mrs. Doubtfire from the browser.
+
+Worth knowing: the desktop plugin browser lists plugins from marketplaces you
+have already configured. Adding a *new* marketplace may still need the
+`/plugin marketplace add` line above, run once. If you are sending this to
+someone who does not use a terminal, check that first rather than assuming, or
+just send them the packaged `.plugin` file and let them click install.
+
+Updating later:
+
+```
+/plugin marketplace update cr8os-family
+```
+
 ## Setup
 
-Install the plugin, then say **"set up Mrs. Doubtfire"**.
+Once installed, say **"set up Mrs. Doubtfire"**.
 
 Six questions, about two minutes:
 

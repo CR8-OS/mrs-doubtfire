@@ -1,0 +1,17 @@
+{
+  "name": "cr8os-family",
+  "owner": {
+    "name": "Christophe Jammet",
+    "url": "https://github.com/CR8-OS"
+  },
+  "description": "Plugins for running a household. Currently one: Mrs. Doubtfire.",
+  "plugins": [
+    {
+      "name": "mrs-doubtfire",
+      "source": "./",
+      "description": "Family operations quarterback. Tracks school deadlines, medical cadence, camp and afterschool registration windows, travel booking windows, parties and gifts, and seasonal household work. Works backwards from deadlines so actions land while they are still cheap.",
+      "category": "productivity",
+      "tags": ["family", "parenting", "school", "household", "calendar"]
+    }
+  ]
+}
