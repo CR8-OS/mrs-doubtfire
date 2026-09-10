@@ -43,6 +43,24 @@ shoe size. Last time the two adults talked about the summer.
    **Also look for booking and order confirmations** — travel, camp, tickets.
    Paid commitments do not announce themselves, and a confirmation sitting in an
    inbox with no calendar entry is a real finding.
+
+   **Sort every invitation by who it is actually for**, because the three kinds
+   carry completely different work:
+
+   | Kind | What it means | What it triggers |
+   |---|---|---|
+   | **Child** | A classmate's party, a playdate, a sleepover | The full chain: RSVP in 48h, gift 5 days out, drop-off and pickup logistics, reciprocity ledger |
+   | **Family** | All of you are invited. A wedding, a barbecue, a neighbor's thing | One calendar block, travel if it is not local, and a decision about whether the kids come |
+   | **Individual** | One adult. A work event, a friend's dinner, a bachelor party | Coverage. If one parent is out, the other is solo that evening, and that is the actual obligation |
+
+   **When it is genuinely ambiguous, ask rather than guess.** A Saturday
+   afternoon invitation from another parent could be a kid's party or an adults'
+   thing, and the two produce different tasks. One question in the brief costs
+   less than buying a gift for an event that did not need one, or discovering
+   nobody arranged childcare.
+
+   Record the answer in the social ledger so the same host does not have to be
+   classified twice.
 5. **Pull open tasks** so nothing gets duplicated and overdue items surface.
 6. **Walk `reference/lead-times.md` against today.** For every row, ask whether
    the action date for the next instance falls inside the next 7 days. If yes,
