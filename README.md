@@ -1,5 +1,7 @@
 # Mrs. Doubtfire
 
+<img src="mrs-doubtfire.jpg" alt="Mrs. Doubtfire peeling back the mask to reveal a Terminator endoskeleton underneath" width="560">
+
 A Claude plugin that keeps track of the family logistics that fall through.
 
 School deadlines. The dentist nobody has booked in fourteen months. Camp
@@ -232,10 +234,14 @@ Everything here is an implementation of that observation. Thanks, Sam.
 
 ---
 
-## A note on the name
+## A note on the name and the picture
 
 Named after the film, affectionately. No affiliation with anyone who owns
-anything related to it.
+anything related to it, and no commercial use intended.
+
+The header is a fan edit of a still from the 1993 film, which belongs to its
+studio, not to this project. It is here as a joke about what the plugin does,
+and it comes down on request.
 
 The character got the job done by being competent and slightly relentless rather
 than by being nice about it, which is roughly the design brief.
