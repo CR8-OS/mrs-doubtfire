@@ -10,7 +10,7 @@ no personal data.
 **Live data** lives in the parent's data folder. Synced across devices, it
 survives every session and is never committed to git.
 
-`~/.mrs-doubtfire/config.md` names that folder. Read the config first on every
+`config.md` in your connected folder names that folder. Read the config first on every
 run. Everything below calls it `<data folder>`.
 
 The repo's `data/*.template.md` files are the schema. The filled-in copies live

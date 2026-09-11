@@ -3,7 +3,7 @@
 Copy to `family-profile.local.md` in your data folder and fill it in. Git
 ignores `*.local.md`, and nothing in the data folder is ever committed.
 
-`~/.mrs-doubtfire/config.md` holds the settings that control behaviour. This
+`config.md` in your connected folder holds the settings that control behaviour. This
 file holds the household detail that tasks and messages need: addresses, phone
 numbers, staff names, the things a task body has to carry. Where the two
 overlap, this file is authoritative.

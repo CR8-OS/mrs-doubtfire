@@ -11,7 +11,7 @@ sharing in the first place.
 ### Added
 
 - **`setup` skill.** Six-question onboarding that writes
-  `~/.mrs-doubtfire/config.md` and scaffolds the data folder. Infers where it
+  `config.md` in your connected folder and scaffolds the data folder. Infers where it
   can — reads mail to propose the school domain rather than asking for it — and
   ends by proving the connection works rather than by claiming it does.
 - **`reference/week-ahead-artifact.md`.** Spec and template for a published
@@ -26,7 +26,7 @@ sharing in the first place.
 
 ### Changed
 
-- **Config lives at `~/.mrs-doubtfire/config.md`**, a fixed path, so skills can
+- **Config lives at `config.md` in your connected folder**, a fixed path, so skills can
   find it before they know anything else. It points at the data folder, which
   can be anywhere.
 - **Multiple children supported** across school, medical, sizes, and social.

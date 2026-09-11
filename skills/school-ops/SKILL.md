@@ -11,7 +11,7 @@ late.
 
 ## Read config first
 
-`~/.mrs-doubtfire/config.md` holds the Schools block: one row per child, with
+`config.md` in your connected folder holds the Schools block: one row per child, with
 the school name, the type, and the email domains that school mails from. Read
 it before anything else in this skill.
 

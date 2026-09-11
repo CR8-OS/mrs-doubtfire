@@ -83,9 +83,56 @@ If a household marks specific senders as sensitive in their mail config, honor
 that first. Where nothing is marked, apply the rule above by inference from the
 sender or the appointment type, and err toward saying less.
 
+## Show it before you publish it
+
+**Never publish without showing what is on it first.** Publishing puts a child's
+week on a hosted URL. That is a one-way door: the link gets texted, forwarded,
+and left open, and it outlives the week it describes.
+
+So the last step before publishing is a short manifest in chat, not the page
+itself:
+
+```
+About to publish. Here is what goes on the page:
+
+Grid        11 entries across 7 days
+Act now     3 items
+Due         6 items
+From school 4 notes
+
+Worth a look before it goes up:
+- "Neuropsychological evaluation, 9:30am" names the kind of care
+- "Ms. Davis, Room 323" names a teacher and a room number
+- The picnic entry includes the address
+
+Publish, or tell me what to cut.
+```
+
+Three rules for that manifest:
+
+**Flag by category, not by vibe.** Anything medical beyond "Appointment", any
+third party's name, any address, anything financial, anything about a sibling or
+another family's child. List it even when it seems obviously fine — the parent
+is the one who knows who will see the link.
+
+**Say what the page does not show**, so nothing is a surprise later. If therapy
+appointments were reduced to a bare "Appointment" under the rule above, say so.
+Silent redaction is its own problem: a parent who does not know something was
+withheld cannot correct it.
+
+**Take edits as edits, not as a fresh request.** "Drop the teacher's name" means
+change that one entry and publish. Do not rebuild the page or re-ask the other
+questions.
+
+**Skip the gate only when the parent has said to** — "just publish it", "stop
+asking me every week". Record that in config as `artifact_review: no` and
+respect it. Some people want the gate once and never again; some want it every
+time. Neither is wrong.
+
 ## Building it
 
-Write the HTML to a file, then publish with the Artifact tool.
+Write the HTML to a file, show the manifest above, then publish with the
+Artifact tool once the parent says go.
 
 **Republish to the same URL each week** by passing the stored artifact URL, so
 the link the parent already sent their partner keeps working and always shows

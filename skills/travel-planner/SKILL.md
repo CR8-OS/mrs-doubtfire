@@ -11,7 +11,7 @@ to move that decision earlier.
 
 ## Read config first
 
-`~/.mrs-doubtfire/config.md` holds the Travel posture block. Read it before
+`config.md` in your connected folder holds the Travel posture block. Read it before
 pricing anything.
 
 ```

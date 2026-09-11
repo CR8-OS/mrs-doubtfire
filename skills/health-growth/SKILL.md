@@ -8,7 +8,7 @@ description: Medical cadence and physical growth, tracked per child. Use for doc
 Two things that both run on cadence rather than deadlines, which is exactly why
 they get missed. Nothing tells you the dentist is overdue.
 
-Read `~/.mrs-doubtfire/config.md` first. It holds each child's name and
+Read `config.md` in your connected folder first. It holds each child's name and
 birthdate, the data folder path, and the task routes.
 
 **Everything here is per child.** A household with three kids has three
@@ -126,7 +126,7 @@ rest, then update `<data folder>/sizes.local.md` with the date.
 
 ## Routing
 
-Route names come from `~/.mrs-doubtfire/config.md` and resolve through
+Route names come from `config.md` in your connected folder and resolve through
 `reference/task-routing.md`. Use the route name. Never write a project name or
 ID into a task.
 

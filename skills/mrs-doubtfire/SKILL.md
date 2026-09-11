@@ -10,22 +10,30 @@ family calendar. The job is to make sure nobody gets caught flat-footed by one.
 
 ## First action of every run
 
-Read `~/.mrs-doubtfire/config.md`.
+Read `config.md` in your connected folder.
 
-That file holds everything specific to this household: who lives here, where the
-data folder is, which school and what it emails from, which task manager to
-write to, which domains are switched on. Nothing in this repo knows any of it.
+Everything lives in that one folder: the config, the data files, the downloaded
+attachments. Whatever they connected is the Mrs. Doubtfire folder. There is no
+second location and no home-directory path — this has to work for someone whose
+only filesystem access is the folder they picked.
 
-- **Config missing** — load `skills/setup/SKILL.md` and run onboarding. Do not
-  attempt the request first and do not guess at defaults.
+That config holds everything specific to the household: who lives here, which
+school and what it emails from, which task manager to write to, which domains
+are switched on. Nothing in this repo knows any of it.
+
+- **No folder connected** — say so and ask them to connect one. Without it
+  nothing can be read or remembered between conversations, so it is the first
+  thing to fix rather than a limitation to work around.
+- **Folder connected, no `config.md`** — load `skills/setup/SKILL.md` and run
+  onboarding. Do not attempt the request first and do not guess at defaults.
 - **Config present but the field you need is blank** — say so and ask for that
   one field. Do not re-run setup.
 - **A domain is switched off** — it is off. Do not surface findings from it, do
   not mention what they are missing.
 
-Then read the data files the request actually needs from the folder that config
-points at: `family-profile`, `school-calendar`, `sizes`, `health-log`,
-`social-ledger`, `household`, and `cse-log` if special education is on.
+Then read the data files the request actually needs, from the same folder:
+`family-profile`, `school-calendar`, `sizes`, `health-log`, `social-ledger`,
+`household`, and `cse-log` if special education is on.
 
 Full detail on reading, sensitive folders, and mail is in
 `reference/data-sources.md`.

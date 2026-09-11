@@ -8,7 +8,7 @@ description: The recurring family brief, usually Sunday. Use when the parent ask
 The heartbeat. Its purpose is to catch the things that are about to become
 expensive or embarrassing while they are still cheap and easy.
 
-Read `~/.mrs-doubtfire/config.md` first. It sets the day, which domains are
+Read `config.md` in your connected folder first. It sets the day, which domains are
 live, whether to publish the page, and which sections the parent wants.
 
 ## Horizons
@@ -98,7 +98,13 @@ What was written, and where. If a task was updated rather than created, say so.
 ## Publish the page
 
 When config has `artifact: yes`, build the week-ahead page from
-`reference/week-ahead-artifact.md` and publish it.
+`reference/week-ahead-artifact.md`.
+
+**Show the manifest and wait** before publishing, unless config says
+`artifact_review: no`. The full rule is in that reference file. Short version:
+list what is going on the page, flag anything medical, named, addressed, or
+financial, say what was left off, and let the parent cut things. Publishing is a
+one-way door and the page outlives the week.
 
 **Republish to the same URL every week.** The link gets sent to a partner once
 and should keep working. Read the stored URL from

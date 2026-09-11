@@ -1,11 +1,8 @@
 # Household config
 
-**This file lives at `~/.mrs-doubtfire/config.md`** — your home directory, not
-the repo. It is the first thing every skill reads and the only file that knows
-anything about your actual family.
-
-Windows: `C:\Users\<you>\.mrs-doubtfire\config.md`
-Mac / Linux: `~/.mrs-doubtfire/config.md`
+**`config.md`, at the root of the folder you connected to Claude.** It is the
+first thing every skill reads and the only file that knows anything about your
+actual family.
 
 The `setup` skill writes this for you. Edit it by hand any time — it is plain
 markdown on purpose, so you never need to ask Claude to change a fact about
@@ -17,17 +14,15 @@ than guessing.
 
 ---
 
-## Data folder
+## Where this lives
 
-**Required.** Where your family's actual data files live. Pick somewhere synced
-so it survives a laptop change — Google Drive, Dropbox, iCloud, OneDrive.
+**This file sits at the root of the folder you connected to Claude.** That
+folder is the whole storage: this config, the data files beside it, and an
+`inbox/` underneath for downloaded attachments. There is no second location.
 
-```
-data_folder: <absolute path>
-```
-
-Example (Windows, Google Drive): `G:\My Drive\Family\_Doubtfire`
-Example (Mac, iCloud): `/Users/you/Library/Mobile Documents/com~apple~CloudDocs/Family/_Doubtfire`
+Pick somewhere synced so it survives a laptop change — Google Drive, Dropbox,
+iCloud, OneDrive. If you already keep a family folder of school documents,
+connect that one, so the source material and the memory live together.
 
 Nothing in that folder is ever committed to git or sent anywhere.
 
@@ -159,10 +154,16 @@ per-seat, and four seats together vanish well before one does.
 day: Sunday
 time: 08:00
 artifact: yes
+artifact_review: yes
 ```
 
 `artifact: yes` publishes a week-ahead page you can send to your partner.
 `artifact: no` keeps the brief in chat only.
+
+`artifact_review: yes` shows you what is going on the page and waits for your
+go-ahead, flagging anything medical, named, addressed, or financial first.
+Publishing is a one-way door, so this defaults on. Set it to `no` once you trust
+what it puts up and would rather not be asked every week.
 
 Sections, in order. Drop any you do not want.
 

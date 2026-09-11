@@ -13,7 +13,7 @@ same one every time. This skill moves it.
 
 ## Read config first
 
-`~/.mrs-doubtfire/config.md` holds the People block: the parent, the partner if
+`config.md` in your connected folder holds the People block: the parent, the partner if
 there is one, each child with a birthdate, and the anniversary date. Read it
 before anything else in this skill.
 

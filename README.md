@@ -77,7 +77,7 @@ Six questions, about two minutes:
 5. Which domains to track
 6. When you want the weekly brief
 
-That writes `~/.mrs-doubtfire/config.md`. It is plain markdown and you can edit
+That writes `config.md` in your connected folder. It is plain markdown and you can edit
 it by hand any time, which is the point — you should never have to ask an AI to
 change a fact about your own family.
 

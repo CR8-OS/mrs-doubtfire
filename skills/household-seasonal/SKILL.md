@@ -10,7 +10,7 @@ registration opens and closes in a week. The first cold day arrives and the
 snow boots are a size too small. School closes for eleven days in December and
 nobody arranged coverage.
 
-Read `~/.mrs-doubtfire/config.md` first. Household details live in the data
+Read `config.md` in your connected folder first. Household details live in the data
 folder, at `<data folder>/household.local.md`.
 
 ## Housing type

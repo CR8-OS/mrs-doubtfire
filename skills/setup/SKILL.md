@@ -1,6 +1,6 @@
 ---
 name: setup
-description: First-run onboarding for the family operations plugin. Interviews the parent and writes their household config — data folder, kids, school email domains, the mail flag label, which task manager they use, which domains to track, and weekly brief preferences. Use on the very first run, when no config exists at ~/.mrs-doubtfire/config.md, when the user says "set up", "get started", "configure", "onboard me", "reconfigure", or "change what you track", and whenever another skill fails because a config field is missing. Part of the mrs-doubtfire plugin.
+description: First-run onboarding for the family operations plugin. Interviews the parent and writes their household config — data folder, kids, school email domains, the mail flag label, which task manager they use, which domains to track, and weekly brief preferences. Use on the very first run, when no config exists at config.md in your connected folder, when the user says "set up", "get started", "configure", "onboard me", "reconfigure", or "change what you track", and whenever another skill fails because a config field is missing. Part of the mrs-doubtfire plugin.
 ---
 
 # Setup
@@ -25,7 +25,7 @@ proves the thing works before they have invested anything in it.
 
 ## Before you start
 
-Check whether `~/.mrs-doubtfire/config.md` already exists.
+Check whether `config.md` in your connected folder already exists.
 
 - **Exists, and they asked to set up again** — do not start over. Read it, show
   them the current settings, ask what they want to change, edit that section
@@ -50,19 +50,29 @@ Before asking anything, tell them plainly what they are setting up:
 Use AskUserQuestion. **Batch them** — two calls of three questions, not six
 round trips.
 
-### 1. Where should the data live?
+### 1. Connect a folder
 
-The only genuinely required answer, and the one they are least likely to have
-thought about.
+**Not a question — an action, and it has to happen before anything else works.**
 
-State the stake in one line: this folder holds the school calendar, sizes,
-medical dates, and everything else remembered between conversations. It should
-be synced, so a new laptop does not erase it.
+Everything gets written to the folder they connect: the config, the school
+calendar, sizes, medical dates, downloaded attachments. Without one, nothing can
+be remembered between conversations, and setup cannot finish.
 
-Offer Google Drive, Dropbox, iCloud, OneDrive, or local. Then find the path
-rather than asking for it — sync folders live in predictable places and
-checking beats asking. Create the folder if it does not exist. Never write
-outside it.
+If no folder is connected, ask for one using the host's own folder-connection
+flow. Do not ask them to type a path, and **do not write to a home directory or
+anywhere outside what they connected** — those paths are not reachable, and a
+setup that appears to succeed while writing nowhere is worse than one that stops
+and asks.
+
+Say why in one line before asking: this folder is where it remembers things, and
+a synced one — Drive, Dropbox, iCloud, OneDrive — survives a new laptop.
+
+Once connected, that folder **is** the Mrs. Doubtfire folder. Config at its
+root as `config.md`, data files alongside it, `inbox/` underneath for
+attachments. One location, no second path to keep track of.
+
+If they already have a family folder full of school documents, connecting that
+one is ideal — then the source documents and the memory live together.
 
 ### 2. Who is in the household?
 
@@ -137,8 +147,13 @@ schedule without asking.
 
 ## Then write the config
 
-Write `~/.mrs-doubtfire/config.md` using the structure in
-`data/config.template.md`. Create the directory if needed.
+Write `config.md` at the root of the connected folder, using the structure in
+`data/config.template.md`.
+
+**Then read it back.** A write that silently went nowhere is the exact failure
+this section exists to prevent, and it stays invisible until three weeks later
+when nothing has been remembered. If the read-back fails, say so plainly and
+stop — do not keep interviewing against a file that does not exist.
 
 **Leave a field blank rather than guessing.** A blank field makes a skill say "I
 do not know your dentist" and ask, which is correct. An invented one makes it
@@ -192,7 +207,7 @@ between useful and annoying.
   number during setup. None of it is needed to be useful, and asking in the
   first two minutes costs trust that is hard to get back.
 - Do not create task-manager projects unprompted.
-- Do not write anything outside their data folder and `~/.mrs-doubtfire/`.
+- Do not write anything outside their data folder and your connected folder.
 - Do not schedule a recurring brief without asking.
 - Do not pad the confirmation. They just answered six questions. Show them it
   works and get out of the way.

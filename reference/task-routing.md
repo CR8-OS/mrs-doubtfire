@@ -2,7 +2,7 @@
 
 Where commitments land, and what a good task looks like.
 
-Read `~/.mrs-doubtfire/config.md` first. The `Task manager` section names the
+Read `config.md` in your connected folder first. The `Task manager` section names the
 tool and maps each logical route to a real project or list. **Skills refer only
 to logical routes.** Never hardcode a project name or ID into a skill file — it
 belongs to one household and breaks for everyone else.
