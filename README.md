@@ -239,9 +239,6 @@ Everything here is an implementation of that observation. Thanks, Sam.
 Named after the film, affectionately. No affiliation with anyone who owns
 anything related to it.
 
-The character got the job done by being competent and slightly relentless rather
-than by being nice about it, which is roughly the design brief.
-
 ---
 
 MIT licensed. Use it, fork it, change it.
