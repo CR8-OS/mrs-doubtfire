@@ -66,33 +66,47 @@ Updating later:
 
 ## Setup
 
-Once installed, say **"set up Mrs. Doubtfire"**.
+Once installed, say **"set up Mrs. Doubtfire"**. Nothing prompts you — you have
+to ask.
 
 Six questions, about two minutes:
 
-1. Where your data should live (a synced folder — Drive, Dropbox, iCloud)
+1. Connect a folder — it keeps everything there, so pick a synced one
 2. Who is in the household, and the kids' birthdates
 3. Which school, and what address it emails from
 4. What you use to track tasks — or nothing, which works fine
 5. Which domains to track
 6. When you want the weekly brief
 
-That writes `config.md` in your connected folder. It is plain markdown and you can edit
-it by hand any time, which is the point — you should never have to ask an AI to
-change a fact about your own family.
+That writes `config.md` into the folder you connected. It is plain markdown and
+you can edit it by hand any time, which is the point — you should never have to
+ask an AI to change a fact about your own family.
 
 ### Then do these three things
 
-**Make a Gmail label called `doubtfire`**, plus a `doubtfire/done` sub-label.
-Anything you label gets picked up on the next run and treated as deliberate. It
-is how everything the keyword searches miss still gets caught. Thirty seconds,
-and it is the single highest-leverage thing here.
+Everything else degrades gracefully. These three do not.
 
-**Feed it your school calendar.** Forward the PDF, paste the dates, whatever.
-Closures, coverage gaps, trip windows, and all the deadline math depend on it.
+**Feed it your school calendar.** Forward the PDF, paste the dates, point at the
+file. Closures, coverage gaps, trip windows and every deadline calculation come
+from it. Without one the whole school domain is guessing.
 
-**Fill in the last dentist and doctor visit.** Two dates. It cannot tell you
-something is overdue until it knows when it last happened.
+**Fill in the last dentist visit and last check-up.** Two dates. Nothing can be
+called overdue until something knows when it last happened, so until these exist
+the medical side stays silent.
+
+**Make a mail label called `doubtfire`**, plus a `doubtfire/done` sub-label.
+Anything you label gets picked up on the next run and treated as deliberate,
+outranking every keyword guess. It is how the things a search would never have
+found still get caught. Thirty seconds, and the highest-leverage minute here.
+
+### What the first week feels like
+
+Thin, and then not. Before you feed it anything it knows nothing about your
+family, and it says so rather than filling the gap with plausible guesses.
+
+That is the honest cost of a tool that refuses to invent facts about your
+children. Give it a calendar and two dates and the Sunday brief starts earning
+its place.
 
 ---
 
@@ -186,6 +200,25 @@ missed, add it.
 
 Pull requests welcome, particularly for lead times in other cities and school
 systems, and for task managers not yet supported.
+
+---
+
+## If you are one of the first people trying this
+
+Setup has been written carefully and reviewed, but it has not been run by many
+people yet. Something will be wrong. Tell me where it breaks rather than working
+around it — a confusing question, a step that did nothing, a place you weren't
+sure what it wanted. That is more useful than a bug report about the code.
+
+Two known rough edges:
+
+**Nothing announces setup.** You have to say "set up Mrs. Doubtfire". If you
+install it and start asking family questions first, it will not know anything.
+
+**The desktop install path is less tested than the terminal one.** If the plugin
+browser will not add the marketplace, ask whoever sent you this for the
+packaged `.plugin` file instead — it installs with a click and needs no
+terminal.
 
 ---
 
