@@ -234,14 +234,10 @@ Everything here is an implementation of that observation. Thanks, Sam.
 
 ---
 
-## A note on the name and the picture
+## A note on the name
 
 Named after the film, affectionately. No affiliation with anyone who owns
-anything related to it, and no commercial use intended.
-
-The header is a fan edit of a still from the 1993 film, which belongs to its
-studio, not to this project. It is here as a joke about what the plugin does,
-and it comes down on request.
+anything related to it.
 
 The character got the job done by being competent and slightly relentless rather
 than by being nice about it, which is roughly the design brief.
